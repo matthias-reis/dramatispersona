@@ -1,9 +1,20 @@
 import React from 'react';
-import { Container, Navigation, Content } from '../components';
+import { Title, Container, Navigation, Content } from '../components';
 
-export default ({ children }) => (
+export default ({ children, data: { site } }) => (
   <Container>
+    <Title>{site.siteMetadata.title}</Title>
     <Navigation />
     <Content>{children()}</Content>
   </Container>
 );
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
