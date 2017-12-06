@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { Container } from '../components';
 
 export default () => (
-  <Container>
+  <div>
     <h1>Dramatis Persona</h1>
     <h2>Willkommen in anderen Welten</h2>
     <p>
@@ -17,6 +16,14 @@ export default () => (
       Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
       sit amet.
     </p>
-    <Link to="/page-2/">Page 2</Link>
-  </Container>
+    <p>
+      <Link to="/page-2/">Page 2</Link>
+    </p>
+    <p>
+      <Link to="/der-fels/">Der Fels</Link>
+    </p>
+    <p>
+      <Link to="/die-goettin/">Die Göttin</Link>
+    </p>
+  </div>
 );

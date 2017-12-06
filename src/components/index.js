@@ -1,4 +1,10 @@
-export { default as Container } from './Container';
+export { default as Issue } from './Issue';
+export { default as Section } from './Section';
+export { default as FullSection } from './FullSection';
+export { default as Footer } from './Footer';
+export { default as Gallery } from './Gallery';
+export { default as Md } from './Md';
 export { default as Navigation } from './Navigation';
-export { default as Content } from './Content';
-export { default as Title } from './Title';
+export { default as Contact } from './Contact';
+export { default as IssueTitle } from './IssueTitle';
+export { default as IssueNumber } from './IssueNumber';
