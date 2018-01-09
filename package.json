@@ -5,7 +5,8 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "calc": "node calc.js"
   },
   "dependencies": {
     "color": "^2.0.1",

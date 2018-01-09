@@ -14,6 +14,7 @@ import {
 import image from './main.jpg';
 import story from 'raw-loader!./story.md';
 import comment from 'raw-loader!./comment.md';
+import Drake from './Drake';
 
 export const meta = {
   issue: '03',
@@ -40,6 +41,7 @@ export default () => (
     <Section id="story" grid={2} spectrum="sd" brightness={5}>
       <Md raw={story} />
     </Section>
+    <Drake />
     <Section id="gallery" grid={1} spectrum="sd" brightness={0}>
       <Gallery album="1234" />
     </Section>
