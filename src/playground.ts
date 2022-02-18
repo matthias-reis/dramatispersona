@@ -31,9 +31,16 @@ const playground: Field[] = [
   new Field('f70', [17], [23], 7, 0),
   new Field('f71', [18], [23, 24], 7, 1),
   new Field('f72', [19], [24], 7, 2),
+  // ROW 8
+  new Field('f81', [20, 21], [], 8, 1),
+  new Field('f82', [21, 22], [], 8, 2),
+  // end
+  new Field('downwardPit', [], [23, 24], 0, 0),
 ];
 
-export const getPlayground = () => [
+export const getPlayground = (): Playground => [
   // get a freshly cloned playground
-  ...playground.map((field) => ({ ...field })),
+  ...playground.map((field) => field.clone()),
 ];
+
+export type Playground = typeof playground;

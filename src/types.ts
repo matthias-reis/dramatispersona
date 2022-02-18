@@ -1,5 +1,1 @@
-export type Stone = {
-  stamina: number;
-  offensive: number;
-  defensive: number;
-};
+export type Direction = 'up' | 'down';

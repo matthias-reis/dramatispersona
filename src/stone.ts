@@ -5,9 +5,9 @@ let lastId = -1;
 export class Stone {
   id: number;
   constructor(
-    public stamina: number = 0,
-    public offense: number = 0,
-    public defense: number = 0
+    public stamina: number = 10,
+    public offense: number = 10,
+    public defense: number = 10
   ) {
     this.id = ++lastId;
     lastId++;
@@ -30,8 +30,16 @@ export class Stone {
    *
    * Randomised by: gaussTight
    */
-
   get offensiveJuice() {
     return gaussTight(this.offense * 10);
+  }
+
+  /** a float that is about ten times as high as the offense value
+   * represents the real offensive power brought to the playground field.
+   *
+   * Randomised by: gaussTight
+   */
+  get defensiveJuice() {
+    return gaussTight(this.defense * 10);
   }
 }
